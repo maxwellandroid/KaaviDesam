@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="24dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_weeks"
+        android:divider="@null"
+        android:paddingBottom="70dp"></ListView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_entries"
+            android:layout_marginTop="12sp"
+            android:visibility="gone"
+            android:layout_marginBottom="12sp"
+            android:stretchColumns="*">
+
+
+        </TableLayout>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Today"
+        android:id="@+id/textview_view_today"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:padding="12sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="12sp"
+       />
+
+</RelativeLayout>

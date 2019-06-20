@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FC565D</color>
+    <color name="colorPrimaryDark">#D4A555</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background">#FF9801</color>
+    
+    <color name="weedaycolor">#863D71</color>
+    <color name="nallaneramColor">#009900</color>
+    <color name="rahucolor">#393A77</color>
+    <color name="kuligaicolor">#E35672</color>
+    <color name="yamakantamcolor">#448B69</color>
+    <color name="soolamcolor">#516B73</color>
+    <color name="parigaramcolor">#62B1E6</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="colorbg">#F8CD8A</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="darkred">#8B0000</color>
+    <color name="darkcolor">#8B0000</color>
+</resources>

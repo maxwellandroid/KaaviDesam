@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:weightSum="4"
+    android:background="@drawable/rounded_edittext"
+    android:id="@+id/layout_contained_view">
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text=""
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/text_date"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="8dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:text=""
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/text_week_day"
+        android:textColor="@color/black"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:text=""
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:id="@+id/text_information"
+        android:padding="8dp"
+      />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text=""
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+      android:id="@+id/text_time"
+        android:textColor="@color/black"
+        android:padding="8dp"/>
+
+
+
+</LinearLayout>

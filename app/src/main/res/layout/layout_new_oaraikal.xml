@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="இன்றைய சுப ஓரைகள்"
+            android:id="@+id/text_day_name"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:drawablePadding="16dp"
+            android:padding="12dp"
+            android:background="#AF3901"
+            android:drawableTint="#fff"
+            android:textColor="#FFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_edittext">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ஓரை நிறம் -- பலன்கள்"
+                android:padding="6dp"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="மிக நன்று"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext_green"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="மிக நன்று"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext_kaavi"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="நன்று"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext_red"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="நன்றல்ல"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="நேரம்"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@color/nallaneramColor"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="ஓரை"
+                android:background="@color/rahucolor"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="பலன்கள்"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:padding="8dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_edittext">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6 AM - 7 AM"
+                android:gravity="center"
+                android:id="@+id/textview_time"
+                android:textSize="12sp"
+                android:paddingTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="சனி"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:paddingTop="10dp"
+                android:id="@+id/textview_oarai"
+                android:background="@drawable/rounded_edittext"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="நோக்க"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/textview_palangal"
+                android:background="@drawable/rounded_edittext"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="முழு நாளும் காண"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:id="@+id/textview_view_today"
+                android:background="@color/background"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+               android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="மாதாந்திரம் காண"
+                android:gravity="center"
+                android:id="@+id/textview_view_month"
+                android:layout_margin="10dp"
+                android:background="@color/parigaramcolor"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+               android:padding="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

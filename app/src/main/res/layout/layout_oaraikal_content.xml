@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="70dp"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="இன்றைய சுப ஓரைகள்"
+            android:id="@+id/text_day_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@color/background"
+            android:textColor="#FFF"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="இன்றைய சுப ஓரைகள்"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="#AF3901"
+        android:drawableTint="#fff"
+        android:textColor="#FFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ஓரை நிறம் -- பலன்கள்"
+                android:padding="6dp"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="மிக நன்று"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext_green"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="மிக நன்று"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext_kaavi"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="நன்று"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext_red"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="நன்றல்ல"
+                        android:textSize="10sp"
+                        android:padding="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நேரம்"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+   android:padding="8dp"
+            android:background="@color/nallaneramColor"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="ஓரை"
+            android:background="@color/rahucolor"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="14sp"
+          android:padding="8dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="பலன்கள்"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="06 AM - 07 AM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time1"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai1"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan1"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="07 AM - 08 AM"
+            android:gravity="center"
+            android:id="@+id/textview_time2"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சூரிய"
+            android:gravity="center"
+            android:id="@+id/textview_oarai2"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:id="@+id/textview_palan2"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="08 AM - 09 AM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time3"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai3"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:id="@+id/textview_palan3"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/textview_time4"
+            android:text="09 AM - 10 AM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai4"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:id="@+id/textview_palan4"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10 AM - 11 AM"
+            android:gravity="center"
+            android:id="@+id/textview_time5"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai5"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:id="@+id/textview_palan5"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="11 AM - 12 PM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time6"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai6"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan6"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="12 PM - 01 PM"
+            android:id="@+id/textview_time7"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai7"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:id="@+id/textview_palan7"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="01 PM - 02 PM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time8"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai8"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:id="@+id/textview_palan8"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="02 PM - 03 PM"
+            android:gravity="center"
+            android:id="@+id/textview_time9"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai9"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan9"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="03 PM - 04 PM"
+            android:gravity="center"
+            android:id="@+id/textview_time10"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai10"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan10"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="04 PM - 05 PM"
+            android:id="@+id/textview_time11"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai11"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan11"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="05 PM - 06 PM"
+            android:id="@+id/textview_time12"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai12"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan12"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="06 PM - 07 PM"
+            android:id="@+id/textview_time13"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai13"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:id="@+id/textview_palan13"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/textview_time14"
+            android:text="07 PM - 08 PM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai14"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan14"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="08 PM - 09 PM"
+            android:gravity="center"
+            android:id="@+id/textview_time15"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai15"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan15"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="09 PM - 10 PM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time16"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai16"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:id="@+id/textview_palan16"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10 PM - 11 PM"
+            android:gravity="center"
+            android:id="@+id/textview_time17"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai17"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan17"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="11 PM - 12 AM"
+            android:gravity="center"
+            android:id="@+id/textview_time18"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai18"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:id="@+id/textview_palan18"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="12 AM - 01 AM"
+            android:gravity="center"
+            android:id="@+id/textview_time19"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai19"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:id="@+id/textview_palan19"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="01 AM - 02 AM"
+            android:gravity="center"
+            android:id="@+id/textview_time20"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai20"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:id="@+id/textview_palan20"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="02 AM - 03 AM"
+            android:id="@+id/textview_time21"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai21"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan21"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="03 AM - 04 AM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time22"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai22"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan22"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/textview_time23"
+            android:text="04 AM - 05 AM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai23"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/textview_palan23"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="05 AM - 06 AM"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/textview_time24"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="சனி"
+            android:gravity="center"
+            android:id="@+id/textview_oarai24"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="நோக்க"
+            android:id="@+id/textview_palan24"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="தற்போதைய ஓரை காண"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:id="@+id/textview_view_now"
+            android:background="@color/background"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:padding="12dp"/>
+        </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

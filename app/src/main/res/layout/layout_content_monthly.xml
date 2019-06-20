@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="70dp"
+    android:background="#fff">
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:headerColor="@color/colorPrimary"
+        app:datePicker="true"
+       />
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_calendar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext_kaavi_new">
+
+        <RelativeLayout
+            android:id="@+id/s_previous"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginTop="5dip"
+
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/left_icon"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/s_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dip"
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:gravity="center"
+            android:text="Date"
+
+            />
+        <RelativeLayout
+            android:id="@+id/s_next"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginTop="5dip"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right_icon" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:id="@+id/header_ll"
+        android:orientation="vertical"
+        android:layout_below="@+id/header"
+
+        android:layout_marginRight="2dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:text="SUN"
+                android:textStyle="bold"
+                android:id="@+id/t_sun"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/nallaneramColor"
+                android:text="MON"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:id="@+id/t_mon"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/nallaneramColor"
+                android:text="TUE"
+                android:textStyle="bold"
+                android:id="@+id/t_tue"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/nallaneramColor"
+                android:text="WED"
+                android:textStyle="bold"
+                android:id="@+id/t_wed"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/nallaneramColor"
+                android:text="THU"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:id="@+id/t_thu"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/nallaneramColor"
+                android:text="FRI"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:id="@+id/t_fri"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/nallaneramColor"
+                android:text="SAT"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"
+                android:id="@+id/t_sat"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+        <GridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/s_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_gravity="center_horizontal"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimaryDark"
+
+            />
+
+    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Today - Monday"
+                android:id="@+id/text_day_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:background="#AF3901"
+                android:drawableTint="#fff"
+                android:textColor="#FFF"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_edittext"
+        android:layout_margin="4dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="நல்ல நேரம்"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/nallaneramColor"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#393A77"
+            android:text="7.30-9"
+            android:id="@+id/textview_nalla_neram"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:gravity="center"
+
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_edittext"
+        android:layout_margin="4dp"
+     >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="இராகு"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="#393A77"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#393A77"
+            android:text="7.30-9"
+            android:id="@+id/textview_rahu_time"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:gravity="center"
+
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="குளிகை"
+                        android:textStyle="bold"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="#E35672"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="1.30-3"
+                        android:id="@+id/textview_kuligai_time"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:textColor="#E35672"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_margin="4dp"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="#448B69"
+                        android:text="எமகண்டம்"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10.30-12"
+                        android:textStyle="bold"
+                        android:id="@+id/textview_yamakanta_time"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:textColor="#448B69"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_margin="4dp"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="வாரசூலை"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#fff"
+                        android:background="#516B73"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="கிழக்கு"
+                        android:textStyle="bold"
+                        android:id="@+id/textview_vaarasoolai_content"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:textColor="#516B73"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_margin="4dp"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="பரிகாரம்"
+                        android:textStyle="bold"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="#62B1E6"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="தயிர்"
+                        android:gravity="center"
+                        android:id="@+id/textview_parigaram_content"
+                        android:textStyle="bold"
+                        android:textColor="#62B1E6"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_govt_holidays"
+        android:visibility="gone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rahucolor"
+        android:layout_margin="6dp"
+        android:text="அரசு விடுமுறை நாட்கள்"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewArasuVidumuraiNatkal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        >
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/layout_subha_muhurtha_naatkal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:layout_margin="6dp"
+        android:text="சுப முகூர்த்த நாட்கள்"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewSubhaMuhurthaNatkal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:nestedScrollingEnabled="false"
+        >
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/layout_viratha_naatkal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nallaneramColor"
+            android:layout_margin="3dp"
+            android:text="விரத நாட்கள்"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="8dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewVirathaNatkal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false"
+            >
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/black_circle"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="அமாவாசை"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="4 சனி "
+                   android:padding="8dp"
+                    android:id="@+id/text_amavasai"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/circle"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="பௌர்ணமி"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="18 சனி "
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:id="@+id/text_pournami"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/star"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="கிருத்திகை"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="6 திங்கள்"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="8dp"
+                        android:id="@+id/text_kiruthigai"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/murugan"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="சஷ்டி"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="10 வெள்ளி, 24 வெள்ளி "
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="8dp"
+                        android:id="@+id/text_sashti"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/ganesha"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="சங்கடஹர சதுர்த்தி"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="3 புதன்"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="8dp"
+                    android:id="@+id/text_sangadahara_chathurthi"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/balaji"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="ஏகாதசி"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="15 புதன், 30 வியாழன்"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:id="@+id/text_eakadhasi"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/nandhi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="பிரதோஷம்"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="3 புதன்"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="8dp"
+                    android:id="@+id/text_pradhosham"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/sivan"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="சிவராத்திரி"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="3 வெள்ளி"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="8dp"
+                        android:id="@+id/text_maatha_sivarathri"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/rounded_edittext"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:tint="#E36E09"
+                        android:padding="8dp"
+                        android:src="@drawable/ganesha"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="சதுர்த்தி"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="3 புதன்"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:id="@+id/text_chathurthi"
+                        android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_karinaal"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kuligaicolor"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:textSize="18sp"
+        android:text="கரிநாள்"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"
+        android:padding="8dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewKarinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:id="@+id/text_karinaal"
+            android:padding="8dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

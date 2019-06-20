@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "903087932794",
+    "firebase_url": "https://kaavidesam-bd1b7.firebaseio.com",
+    "project_id": "kaavidesam-bd1b7",
+    "storage_bucket": "kaavidesam-bd1b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903087932794:android:52e3f697140cb098",
+        "android_client_info": {
+          "package_name": "com.maxwell.kaavidesam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903087932794-104tp1eb562b4o30kauhcnto364so415.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLODiHIB-0AKd4w4UdmiwJNq7A6t6ClaY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

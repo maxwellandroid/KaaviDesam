@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/rounded_edittext_kaavi_new"
+    android:layout_height="60dp"
+    >
+    <ImageView
+        android:layout_width="18dp"
+        android:id="@+id/image_muhurtha_naatkal"
+        android:layout_height="18dp"
+        android:layout_gravity="end"
+        android:src="@drawable/sm"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="1"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textSize="14dip"
+        android:textStyle="bold" >
+    </TextView>
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cal_reason"
+           android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="14dip"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+
+    <ImageView
+
+        android:layout_width="15dp"
+        android:id="@+id/image_event"
+        android:layout_height="15dp"
+        android:layout_gravity="start"
+
+android:visibility="invisible"
+        android:src="@drawable/circle"
+        android:tint="@color/background"/>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/date_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dot"
+        android:visibility="gone" />
+
+</LinearLayout>
